@@ -1,0 +1,18 @@
+{%extends 'base5.html'%}
+{%block body_block%}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-4 border" style="background-color:whitesmoke;border-radius: 20px;">
+            <form action="" method="post" style="color:green;">
+                <h1 class="mb-3">LOGIN</h1>
+                {%csrf_token%}
+                {{form.as_p}}
+                <input type="submit" value="Login"  class="btn btn-outline-success">
+            </form>
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+</div>
+{%endblock%}
